@@ -1,0 +1,1 @@
+Program Y is only allowed to read/write files under /var/Y/
