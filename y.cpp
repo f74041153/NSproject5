@@ -35,14 +35,14 @@ void _read(string path){
 
 int main(){
 
-	string allowed_wpath = "./w.txt", test_wpath = "~/w.txt";
-	string allowed_rpath = "./w.txt", test_rpath = "~/w.txt";
+	string file_name = "w.txt";
+	string allowed_path = "/var/Y/", test_path = "~/";
 
-	_write(allowed_wpath);
-	_write(test_wpath);
+	_write(allowed_path + file_name);
+	_write(test_path + file_name);
 
-	_read(allowed_rpath);
-	_read(test_rpath);
+	_read(allowed_path + file_name);
+	_read(test_path + file_name);
 
 
 	struct sockaddr_in server; 
